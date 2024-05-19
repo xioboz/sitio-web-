@@ -1,0 +1,150 @@
+*{
+margin:0 auto;
+padding: 0;
+}
+
+body{
+    background: grey;
+    padding: 20px;
+}
+/*CABESERA*/
+header{
+max-width:  1000px;
+min-height: 130px;
+background: black;
+margin:0 auto ;
+border-radius:20px 20px 0 0;
+}
+#logo{
+width: 300px;
+float: left;
+margin-top: 20px;
+margin-left: 20px;
+animation: 1s entradlogo 1;
+}
+#logo img:hover{
+filter: blur(5px); 
+}
+/*CABESERA*/
+/*MENU-HORISONTAL*/
+#menu-h{
+max-width: 1000px;
+min-height: 50px;
+background: #000;
+margin:0 auto;
+}
+#menu-h ul {
+    display: flex;
+}
+#menu-h a{
+    color: white;
+    text-decoration: none; 
+    list-style: none;
+}
+#menu-h a:hover{
+    background:#069;
+}
+#menu-h ul ul{
+    display: none;
+    padding: absolute;
+}
+#menu-h ul li:hover ul{
+    display: block;
+}
+/*MENU-HORISONTAL*/
+#banner{
+max-width: 1000px;
+min-height: 250px;
+background:#444;
+margin: 0 auto;
+}
+#contenedor{
+    max-width:1000px;
+    min-height: 700px;
+    background:#fff;
+    margin:0 auto;
+}
+/*Menu-vertical*/
+#menu-v{
+width: 300px;
+min-height: 700px;
+background:gainsboro;
+float:left;
+}
+#menu-v ul {
+    list-style:none ;
+    padding:16px;
+}
+#menu-v a{
+    display: block;
+    color: beige;
+    background: deepskyblue;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+#menu-v a :hover{
+    background: beige;
+}
+#menu-v a:hover img{
+animation: 1s rotacion 1;
+}
+/*Menu-vertical*/
+/*CONTENIDO*/
+#contennido{
+   width: 700px;
+   min-height: 700px;
+   background: white; 
+   float:left;
+   padding: 15px;
+   box-sizing: border-box;
+}
+#contenido h2{
+text-align: center;
+margin-bottom:30px ;
+}
+#contenido p{
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    margin:10px;
+    padding:10px;
+}
+.img-izq{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 1px solid white;
+    padding: 5px;
+}
+/*CONTENIDO*/
+/*PIEDE PAGINA*/
+footer{
+    max-width: 1000px;
+    background:#000;
+    margin:0 auto;
+    border-radius: 0 0 20px 20px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/*PIEDE PAGINA*/
+/*KEYFRAME*/
+@keyframes entradalogo{
+    0%{
+        transform:translateY(-200px) ;
+    }
+}
+@keyframes rotacion{
+    0% {
+      transform: rotate(270deg);
+    }
+}
